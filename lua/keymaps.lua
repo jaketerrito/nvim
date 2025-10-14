@@ -14,11 +14,6 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 -- Lazy.nvim (ensure keymap description so WhichKey shows it)
 vim.keymap.set("n", "<leader>p", "<cmd>Lazy<CR>", { desc = "Open Lazy Manager", noremap = true, silent = true })
 
--- NvimTree toggle (use Lua API + desc)
-vim.keymap.set("n", "<leader>e", function()
-    require("nvim-tree.api").tree.toggle()
-end, { desc = "Explorer", noremap = true, silent = true })
-
 -- WhichKey optional setup (it will automatically pick up keymaps with `desc`)
 local ok, wk = pcall(require, "which-key")
 if ok then

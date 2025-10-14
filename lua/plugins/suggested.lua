@@ -39,12 +39,17 @@ return {
     {
         "nvim-tree/nvim-tree.lua",
         dependencies = { "nvim-tree/nvim-web-devicons" },
-        cmd = "NvimTreeToggle",  -- load on this command
         keys = {
-            { "<leader>e", function() require("nvim-tree.api").tree.toggle() end, desc = "Explorer" },
+            {
+                "<leader>e",
+                function()
+                    require("nvim-tree.api").tree.toggle()
+                end,
+                desc = "Explorer",
+            },
         },
         config = function()
-            require("nvim-tree").setup({})
-        end
+            require("nvim-tree").setup()
+        end,
     }
 }
