@@ -1,29 +1,27 @@
--- Set leader key
+-- Leader
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Keymap options
 local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
 
--- Example: basic normal mode mapping
-keymap("n", "<leader>e", ":echo 'Hello from keymaps.lua'<CR>", opts)
+-- Window navigation
+vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
+vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
+vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
+vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
--- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+-- Lazy.nvim (ensure keymap description so WhichKey shows it)
+vim.keymap.set("n", "<leader>p", "<cmd>Lazy<CR>", { desc = "Open Lazy Manager", noremap = true, silent = true })
 
--- Lazy.nvim keymap
-keymap("n", "<leader>p", ":Lazy<CR>", opts)  -- <Space>p opens Lazy
+-- NvimTree toggle (use Lua API + desc)
+vim.keymap.set("n", "<leader>e", function()
+    require("nvim-tree.api").tree.toggle()
+end, { desc = "Explorer", noremap = true, silent = true })
 
--- Register mappings with WhichKey
+-- WhichKey optional setup (it will automatically pick up keymaps with `desc`)
 local ok, wk = pcall(require, "which-key")
 if ok then
-  wk.setup() -- initialize WhichKey
-  wk.register({
-    ["<leader>"] = {
-      p = { ":Lazy<CR>", "Open Lazy Manager" },
-    },
-  })
+    wk.setup()
 end
+
