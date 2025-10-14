@@ -29,3 +29,6 @@ Kitten terminal comes with this colorscheme preinstalled, `kitten themes --reloa
 ### [lualine](https://github.com/nvim-lualine/lualine.nvim)
 Provides statusline in neovim.
 This includes git information, current open file, nvim mode
+
+### [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+Provides a file explorer
