@@ -35,3 +35,10 @@ Provides a file explorer
 
 ### [gitsigne](https://github.com/lewis6991/gitsigns.nvim)
 Provides highlighting and shortcuts for git diff
+
+
+
+
+## Extras
+- [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
+- [oh-my-zsh](https://ohmyz.sh/)
