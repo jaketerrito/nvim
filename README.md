@@ -1,23 +1,15 @@
 # nvim
-My NVIM configurations
-Based off of [this article series](https://medium.com/@shaikzahid0713/the-neovim-series-32163eb1f5d0)
+My NVIM configurations using the [lazy plugin manager](https://lazy.folke.io/)
+
 ## Requirements
  - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
- - using a [nerdfont](https://www.nerdfonts.com/)
-
-
-## Whats going on here
-1. Installed neovim
-2. Configured to use lazy as package manager [docs](https://lazy.folke.io/installation)
-
-
-## Configurations
-- Add plugins in `/lua/plugins/` following [lazy plugins spec](https://lazy.folke.io/spec)
-- Manage plugins with `nvim` -> `:Lazy`
-
+ - [nerdfont](https://www.nerdfonts.com/)
 
 
 ## Plugins
+Add plugins in `/lua/plugins/` following the [lazy plugins spec](https://lazy.folke.io/spec)
+Manage plugins with `nvim` -> `:Lazy`
+
 ### [which-key](https://github.com/folke/which-key.nvim)
 Plugin to help show keybindings
 Trigger with `<space>` from normal mode
@@ -33,11 +25,8 @@ This includes git information, current open file, nvim mode
 ### [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 Provides a file explorer
 
-### [gitsigne](https://github.com/lewis6991/gitsigns.nvim)
+### [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 Provides highlighting and shortcuts for git diff
-
-
-
 
 ## Extras
 - [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
