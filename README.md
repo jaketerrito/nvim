@@ -32,3 +32,6 @@ This includes git information, current open file, nvim mode
 
 ### [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 Provides a file explorer
+
+### [gitsigne](https://github.com/lewis6991/gitsigns.nvim)
+Provides highlighting and shortcuts for git diff

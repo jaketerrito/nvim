@@ -51,5 +51,16 @@ return {
         config = function()
             require("nvim-tree").setup()
         end,
-    }
+    },
+    {
+        "lewis6991/gitsigns.nvim",
+        lazy=false,
+        keys = {
+            {
+                "<leader>d",
+                "<cmd>Gitsigns diffthis HEAD<cr>",
+                desc="Diff"
+            }
+        }
+    },
 }
