@@ -4,7 +4,8 @@ My NVIM configurations using the [lazy plugin manager](https://lazy.folke.io/)
 ## Requirements
  - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
  - [nerdfont](https://www.nerdfonts.com/)
-
+ - [ripgrep](https://github.com/BurntSushi/ripgrep) - dependency for telescope
+ - [fd](https://github.com/sharkdp/fd?) - dependency for telescope
 
 ## Plugins
 Add plugins in `/lua/plugins/` following the [lazy plugins spec](https://lazy.folke.io/spec)
@@ -27,6 +28,12 @@ Provides a file explorer
 
 ### [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 Provides highlighting and shortcuts for git diff
+
+### [telescope]
+Search within file tree by file name and contents.
+
+### [tree sitter]
+TODO what is this how configure
 
 ## Extras
 - [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
