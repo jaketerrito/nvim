@@ -63,4 +63,50 @@ return {
             }
         }
     },
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = 'v0.2.0',
+        branch = 'master',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'nvim-telescope/telescope-fzf-native.nvim',
+        },
+        config = function()
+            require('telescope').load_extension('fzf')
+        end,
+        keys = {
+            {
+                "<leader>ff",
+                function()
+                    require("telescope.builtin").find_files()
+                end,
+                desc = 'Telescope find files'
+            },
+            {
+                "<leader>fg",
+                function()
+                    require("telescope.builtin").live_grep()
+                end,
+                desc = 'Telescope live grep'
+            },
+            {
+                "<leader>fh",
+                function()
+                    require("telescope.builtin").help_tags()
+                end,
+                desc = 'Telescope help tags'
+            }
+        }
+    },
+    { 
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build = 'make'
+    },
+    {
+      'nvim-treesitter/nvim-treesitter',
+      lazy = false,
+      tag = 'v0.10.0',
+      branch = 'main',
+      build = ':TSUpdate'
+    }
 }
