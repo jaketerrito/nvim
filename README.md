@@ -6,6 +6,7 @@ My NVIM configurations using the [lazy plugin manager](https://lazy.folke.io/)
  - [nerdfont](https://www.nerdfonts.com/)
  - [ripgrep](https://github.com/BurntSushi/ripgrep) - dependency for telescope
  - [fd](https://github.com/sharkdp/fd?) - dependency for telescope
+ - [tmux](https://github.com/tmux/tmux) - follow tmux navigator guide to configure tmux conf
 
 ## Plugins
 Add plugins in `/lua/plugins/` following the [lazy plugins spec](https://lazy.folke.io/spec)
@@ -34,6 +35,9 @@ Search within file tree by file name and contents.
 
 ### [tree sitter]
 TODO what is this how configure
+
+### [tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
+Simple tmux navigation with nvim
 
 ## Extras
 - [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
