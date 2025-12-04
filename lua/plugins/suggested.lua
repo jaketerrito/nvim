@@ -141,5 +141,15 @@ return {
             { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
             { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
         },
+    },
+    {
+        "mason-org/mason-lspconfig.nvim",
+        opts = {
+            ensure_installed = { "lua_ls", "gopls", "ruff"},
+        },
+        dependencies = {
+            { "mason-org/mason.nvim", opts = {} },
+            "neovim/nvim-lspconfig",
+        },
     }
 }

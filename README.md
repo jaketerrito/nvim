@@ -39,6 +39,10 @@ TODO what is this how configure
 ### [tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
 Simple tmux navigation with nvim
 
+### [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim)
+Installs and configures lsp servers, available configurations can be found [here](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
+Powering auto complete and linting
+
 ## Extras
 - [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 - [oh-my-zsh](https://ohmyz.sh/)
