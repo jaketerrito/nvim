@@ -11,6 +11,9 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
 vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
 vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
+-- Autocopmlete -- 
+vim.api.nvim_set_keymap("i", "<C-Space>", "<C-x><C-o>", { noremap = true })
+
 -- Lazy.nvim (ensure keymap description so WhichKey shows it)
 vim.keymap.set("n", "<leader>p", "<cmd>Lazy<CR>", { desc = "Open Lazy Manager", noremap = true, silent = true })
 
