@@ -8,6 +8,15 @@ My NVIM configurations using the [lazy plugin manager](https://lazy.folke.io/)
  - [fd](https://github.com/sharkdp/fd?) - dependency for telescope
  - [tmux](https://github.com/tmux/tmux) - follow tmux navigator guide to configure tmux conf
 
+## Hints
+### Normal Mode
+- `space` leader for nvim commands, will display `which-key` hints
+- `ctrl + [h,j,k,l]` window navigation (including tmux terminal)
+- `ctrl + b + "` create new tmux terminal
+
+### Insert Mode
+- `ctrl + space` autocomplete suggestions
+
 ## Plugins
 Add plugins in `/lua/plugins/` following the [lazy plugins spec](https://lazy.folke.io/spec)
 Manage plugins with `nvim` -> `:Lazy`
